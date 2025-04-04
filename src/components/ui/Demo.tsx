@@ -6,9 +6,14 @@
 /********** ********** ********** **********/
 
 import { ColorModeButton } from "@/components/ui/color-mode";
+import { HStack } from "@chakra-ui/react";
 
 const Demo = () => {
-  return <ColorModeButton />;
+  return (
+    <HStack justifyContent={"space-between"}>
+      <ColorModeButton />
+    </HStack>
+  );
 };
 
 export default Demo;

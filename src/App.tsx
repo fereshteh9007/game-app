@@ -7,7 +7,6 @@
 
 import { Grid, GridItem } from "@chakra-ui/react";
 import NavBar from "./components/ui/NavBar";
-import Demo from "./components/ui/Demo";
 
 function App() {
   return (
@@ -19,14 +18,11 @@ function App() {
     >
       <GridItem area="nav">
         <NavBar />
-        <Demo />
       </GridItem>
-      <GridItem area="aside" bg="gold" hideBelow="lg">
+      <GridItem area="aside" hideBelow="lg">
         Aside
       </GridItem>
-      <GridItem area="main" bg="blue">
-        Main
-      </GridItem>
+      <GridItem area="main">Main</GridItem>
     </Grid>
   );
 }
