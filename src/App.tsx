@@ -2,11 +2,12 @@
 /* @fileoverview App
 /* @author Fereshteh Rohani
 /* @created 2024-04-03
-/* @modified 2024-04-04
+/* @modified 2024-04-05
 /********** ********** ********** **********/
 
 import { Grid, GridItem } from "@chakra-ui/react";
 import NavBar from "./components/ui/NavBar";
+import GameGrid from "./components/ui/GameGrid";
 
 function App() {
   return (
@@ -22,7 +23,9 @@ function App() {
       <GridItem area="aside" hideBelow="lg">
         Aside
       </GridItem>
-      <GridItem area="main">Main</GridItem>
+      <GridItem area="main">
+        <GameGrid />
+      </GridItem>
     </Grid>
   );
 }
