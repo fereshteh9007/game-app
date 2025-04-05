@@ -12,6 +12,7 @@ interface Game {
   id: number;
   name: string;
 }
+
 interface GamesResponse {
   count: number;
   results: Game[];
