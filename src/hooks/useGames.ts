@@ -9,7 +9,7 @@ import apiClient from "@/services/api-client";
 import { useEffect, useState } from "react";
 import { CanceledError } from "axios";
 
-interface Platform {
+export interface Platform {
   id: number;
   name: string;
   slug: string;
