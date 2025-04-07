@@ -11,9 +11,9 @@ import Demo from "../../components/ui/Demo";
 
 const NavBar = () => {
   return (
-    <HStack>
+    <HStack justifyContent={"space-between"}>
       <Image src={logo} boxSize="50px" />
-      <Text>Nav Bar</Text>
+      <Text>...</Text>
       <Demo />
     </HStack>
   );
