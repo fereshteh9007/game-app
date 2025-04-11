@@ -12,15 +12,17 @@ interface Props {
 
 import { Button, Menu, Portal } from "@chakra-ui/react";
 
+import sortOrders from "@/data/sortOrders";
+
 const SortSelector = ({ sortOrder, onSelectSortOrder }: Props) => {
-  const sortOrders = [
-    { value: "", lable: "Relevance" },
-    { value: "-name", lable: "Name" },
-    { value: "-metacritic", lable: "Popularity" },
-    { value: "-added", lable: "Date added" },
-    { value: "-released", lable: "Release date" },
-    { value: "-rating", lable: "Average rating" },
-  ];
+  // const sortOrders = [
+  //   { value: "", lable: "Relevance" },
+  //   { value: "-name", lable: "Name" },
+  //   { value: "-metacritic", lable: "Popularity" },
+  //   { value: "-added", lable: "Date added" },
+  //   { value: "-released", lable: "Release date" },
+  //   { value: "-rating", lable: "Average rating" },
+  // ];
 
   const currentSortOrder = sortOrders.find(
     (order) => order.value === sortOrder

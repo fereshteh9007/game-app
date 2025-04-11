@@ -10,6 +10,7 @@ import {
   CardBody,
   CardHeader,
   CardRoot,
+  Heading,
   HStack,
   Image,
 } from "@chakra-ui/react";
@@ -26,13 +27,13 @@ const GameCard = ({ game }: Props) => {
     <CardRoot>
       <Image src={getCroppedImageUrl(game.background_image)}></Image>
       <CardBody>
-        <CardHeader fontSize={"1xl"}>{game.name}</CardHeader>
-        <HStack justifyContent={"space-between"}>
+        <HStack marginBottom={4} justifyContent={"space-between"}>
           <PlatformIconList
             platforms={game.parent_platforms.map((p) => p.platform)}
           ></PlatformIconList>
           <CriticScore score={game.metacritic}></CriticScore>
         </HStack>
+        <Heading fontSize={"1xl"}>{game.name}</Heading>
       </CardBody>
     </CardRoot>
   );
