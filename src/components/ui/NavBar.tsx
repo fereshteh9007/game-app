@@ -5,16 +5,20 @@
 /* @modified 2024-04-04
 /********** ********** ********** **********/
 
-import { HStack, Image, Text } from "@chakra-ui/react";
+import { HStack, Image } from "@chakra-ui/react";
 import logo from "../../assets/mushroom.png";
 import Demo from "../../components/ui/Demo";
 import SearchInput from "./SearchInput";
 
-const NavBar = () => {
+interface Props {
+  onSearch: (searchText: string) => void;
+}
+
+const NavBar = ({ onSearch }: Props) => {
   return (
     <HStack justifyContent={"space-between"}>
       <Image src={logo} boxSize="50px" />
-      <SearchInput />
+      <SearchInput onSearch={onSearch} />
       <Demo />
     </HStack>
   );
