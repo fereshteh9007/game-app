@@ -1,3 +1,9 @@
+/********** ********** ********** **********/
+/* @author Fereshteh Rohani
+/* @created 2024-04-06
+/* @modified 2024-04-06
+/********** ********** ********** **********/
+
 import { Button, Menu, Portal } from "@chakra-ui/react";
 import { Platform } from "@/hooks/useGames";
 import usePlatforms from "@/hooks/usePlatforms";

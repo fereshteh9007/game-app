@@ -1,5 +1,4 @@
 /********** ********** ********** **********/
-/* @fileoverview GameGrid
 /* @author Fereshteh Rohani
 /* @created 2024-04-06
 /* @modified 2024-04-06

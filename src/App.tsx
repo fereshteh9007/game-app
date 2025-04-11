@@ -15,6 +15,7 @@ import { Platform } from "./hooks/useGames";
 import PlatformSelector from "./components/ui/PlatformSelector";
 import SortSelector from "./components/ui/SortSelector";
 import PageHeading from "./components/ui/PageHeading";
+import Footer from "./components/ui/Footer";
 
 export interface GameQuery {
   genre: Genre | null;
@@ -72,6 +73,7 @@ function App() {
           <GameGrid gameQuery={gameQuery} />
         </GridItem>
         <GameGrid gameQuery={gameQuery} />
+        <Footer />
       </GridItem>
     </Grid>
   );

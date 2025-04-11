@@ -1,5 +1,4 @@
 /********** ********** ********** **********/
-/* @fileoverview Nav Bar
 /* @author Fereshteh Rohani
 /* @created 2024-04-04
 /* @modified 2024-04-04
@@ -16,7 +15,7 @@ interface Props {
 
 const NavBar = ({ onSearch }: Props) => {
   return (
-    <HStack justifyContent={"space-between"}>
+    <HStack justifyContent={"space-between"} marginTop={4} marginBottom={3}>
       <Image src={logo} boxSize="50px" />
       <SearchInput onSearch={onSearch} />
       <Demo />

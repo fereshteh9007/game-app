@@ -1,5 +1,4 @@
 /********** ********** ********** **********/
-/* @fileoverview API-Client
 /* @author Fereshteh Rohani
 /* @created 2024-04-05
 /* @modified 2024-04-05

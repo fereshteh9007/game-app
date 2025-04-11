@@ -1,19 +1,11 @@
 /********** ********** ********** **********/
-/* @fileoverview Game Card
 /* @author Fereshteh Rohani
 /* @created 2024-04-06
 /* @modified 2024-04-06
 /********** ********** ********** **********/
 
 import { Game } from "@/hooks/useGames";
-import {
-  CardBody,
-  CardHeader,
-  CardRoot,
-  Heading,
-  HStack,
-  Image,
-} from "@chakra-ui/react";
+import { CardBody, CardRoot, Heading, HStack, Image } from "@chakra-ui/react";
 import PlatformIconList from "./PlatformIconList";
 import CriticScore from "./CriticScore";
 import getCroppedImageUrl from "@/services/image-url";

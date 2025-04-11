@@ -1,5 +1,4 @@
 /********** ********** ********** **********/
-/* @fileoverview Platforms
 /* @author Fereshteh Rohani
 /* @created 2024-04-08
 /* @modified 2024-04-08

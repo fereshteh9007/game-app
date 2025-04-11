@@ -1,5 +1,4 @@
 /********** ********** ********** **********/
-/* @fileoverview Genres
 /* @author Fereshteh Rohani
 /* @created 2024-04-06
 /* @modified 2024-04-08
@@ -37,7 +36,7 @@ const GenreList = ({ onSelectGenre, selectedGenre }: Props) => {
       </Heading>
       <ListRoot>
         {data.map((genre) => (
-          <ListItem key={genre.id} paddingY={"10px"}>
+          <ListItem key={genre.id} paddingY={"10px"} listStyle={"none"}>
             <HStack>
               <Image
                 boxSize={"40px"}
