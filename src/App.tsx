@@ -2,7 +2,7 @@
 /* @fileoverview App
 /* @author Fereshteh Rohani
 /* @created 2024-04-03
-/* @modified 2024-04-08
+/* @modified 2024-04-10
 /********** ********** ********** **********/
 
 import { useState } from "react";
@@ -18,6 +18,7 @@ import SortSelector from "./components/ui/SortSelector";
 export interface GameQuery {
   genre: Genre | null;
   platform: Platform | null;
+  sortOrder: string;
 }
 
 function App() {
@@ -50,7 +51,12 @@ function App() {
             setGameQuery({ ...gameQuery, platform })
           }
         />
-        <SortSelector />
+        <SortSelector
+          sortOrder={gameQuery.sortOrder}
+          onSelectSortOrder={(sortOrder) =>
+            setGameQuery({ ...gameQuery, sortOrder })
+          }
+        />
         <GameGrid gameQuery={gameQuery} />
       </GridItem>
     </Grid>

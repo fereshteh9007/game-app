@@ -2,7 +2,7 @@
 /* @fileoverview GameGrid
 /* @author Fereshteh Rohani
 /* @created 2024-04-05
-/* @modified 2024-04-08
+/* @modified 2024-04-10
 /********** ********** ********** **********/
 
 import { SimpleGrid, Text } from "@chakra-ui/react";
